@@ -1,0 +1,10 @@
+Comandos para o Windows:
+
+cd -> Mudar o diretório atual;
+echo %cd% -> Exibir qual é o diretório atual.
+cd .. -> retrocede uma pasta por vez;
+dir -> Exibir arquivos/diretórios do diretório atual;
+mkdir -> Cria um diretório;
+del -> Deletar um arquivo;
+rmdir -> Deletar uma pasta vazia;
+cls -> Limpar o terminal;

@@ -1,4 +1,4 @@
-# Bootcamp Philips - Módulos Completados:
+# Bootcamp - Módulos Completados:
 
 * Lógica Essencial
 * Pensamento Computacional

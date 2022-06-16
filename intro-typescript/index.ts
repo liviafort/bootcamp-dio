@@ -1,22 +1,8 @@
-interface Animal{
-  nome: string;
-  tipo: 'terrestre' | 'aquatico';
-  domestico: boolean;
-}
+const input = document.getElementById('input') as HTMLInputElement;
+input.addEventListener('input', (event) => {
+  console.log('Digitei');
+  const i = event.currentTarget as HTMLInputElement;
+  console.log(i.value);
+});
 
-interface Felino extends Animal{
-  visaoNoturna: Boolean;
-}
 
-interface Canino extends Animal{
-  porte: 'pequeno' | 'medio' | 'grande';
-}
-
-type Domestico = Felino | Canino;
-
-const animal: Domestico  = {
-  nome: 'cachorro',
-  tipo: 'terrestre',
-  domestico: true,
-  porte: 'pequeno',
-}

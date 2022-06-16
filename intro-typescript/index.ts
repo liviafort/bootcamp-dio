@@ -1,21 +1,22 @@
 interface Animal{
   nome: string;
   tipo: 'terrestre' | 'aquatico';
-  executarRugido(altura: number): void;
+  domestico: boolean;
 }
 
 interface Felino extends Animal{
   visaoNoturna: Boolean;
 }
-const animal: Animal = {
-  nome: 'Elefante',
-  tipo: 'terrestre',
-  executarRugido: (altura) => (`${altura}dB`)
+
+interface Canino extends Animal{
+  porte: 'pequeno' | 'medio' | 'grande';
 }
 
-const felino: Felino = {
-  nome: 'Leão',
+type Domestico = Felino | Canino;
+
+const animal: Domestico  = {
+  nome: 'cachorro',
   tipo: 'terrestre',
-  visaoNoturna: true,
-  executarRugido: (altura) => (`${altura}dB`)
+  domestico: true,
+  porte: 'pequeno',
 }

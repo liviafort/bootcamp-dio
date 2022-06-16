@@ -1,17 +1,14 @@
 interface Usuario{
   id: string;
   email: string;
+  cargo?: 'funcionario' |'gerente' | 'coordenador' | 'supervisor';
 }
 
-interface Admnistrador extends Usuario{
-  cargo: 'gerente' | 'coordenador' | 'supervisor';
-}
-
-function redirecione(usuario: Usuario | Admnistrador){
-  if ('cargo' in  usuario){
-    //redirecionar para a área de adm
+function redirecione(usuario: Usuario){
+  if(usuario.cargo){
+    //redirecionar(usuario.cargo);
   }
-    //redirecionar para a area de usuário
+  //redirecionar para a area do usuario
 }
 
 
